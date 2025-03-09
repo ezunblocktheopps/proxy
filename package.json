@@ -1,0 +1,14 @@
+{
+  "name": "sigmi-proxy",
+  "version": "1.0.0",
+  "description": "A simple web proxy server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "author": "Sigmi",
+  "license": "MIT"
+}
