@@ -8,7 +8,7 @@ const proxy = httpProxy.createProxyServer({});
 // Create an HTTP server
 const server = http.createServer((req, res) => {
     // Forward requests back to itself
-    proxy.web(req, res, { target: 'http://localhost:3000' }, (err) => {
+    proxy.web(req, res, { target: 'https://sigmi-proxy.onrender.com' }, (err) => {
         if (err) {
             console.error('Proxy error:', err.message);
             res.writeHead(500, { 'Content-Type': 'text/plain' });
